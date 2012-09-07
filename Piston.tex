@@ -48,21 +48,23 @@
 \caption{Piston}
 \end{figure}
 
-Consider the depicted isolated piston in figure \ref{piston}. There is no heat exchange between the (ideal) gas inside and the outside world, but the piston does some work $W$. 
+Consider the depicted isolated piston in figure \ref{piston}. There is no heat exchange between the (ideal) gas inside and the outside world, but the piston does some work $W$ on the outside world. 
 
 Before analyzing the problem it may be useful to identify which variables and constants are involved and what equations will be useful in solving the problem. Since we are assuming the inside to be an ideal gas, we can make use of the following equations:
 \begin{eqnarray*}
 	pV &=& nRT\\
 	pV &=& \frac{2}{3}U
 \end{eqnarray*}
+Furthermore, we may relate the volume $V$ of the ideal gas to the distance between the piston and the back wall of the container by
+\[ V = Ax \]
 
-In these equations $R$ is a constant as always and so is $n$, because no molecules can escape from the piston. However, since the piston is not thermically  connected to the outside world $T$ may or may not be constant and we will therefore treat is as a variable. $p$,$V$ and $U$ will be variables as well as we are used to from previous problems.
+In these equations $R$ is a constant as always and as are $n$, because no molecules can escape from the piston and $A$ because the surface area of the piston does not change. However, since the piston is not thermically  connected to the outside world $T$ may change and is therefore a variable. $x$,$p$,$V$ and $U$ will be variables as well as we are used to from previous problems.
 
 Now, to begin analyzing the problem let us use first determine the change in internal energy ($U$) of the gas. By the conservation of energy, we must clearly have.
 \[ U = W + U' \]
-where $W$ is the work done by the piston and $U'$ is the amount of internal energy. Recall the $p=\frac{F}{A}$ and that we may thus represent the work done (and thus  negative change in internal energy) for an infinitesimal movement $dx$ of the piston as 
-\[ dU=-pAdx \].
-The change in volume of the inside of the piston is given by 
+where $W$ is the work done by the piston and $U'$ is the final amount of internal energy. Recall that $p=\frac{F}{A}$ on the surface of the piston and that, since $W=Fx$ we may represent the work done (and thus  negative change in internal energy) for an infinitesimal movement $dx$ of the piston as 
+\[ dU=-pAdx \]
+On the other hand, the change in volume of the inside of the piston is given by 
 \[ dV=Adx \].
 We are now ready to proceed by making use of the equation 
 \[ pV = \frac{2}{3}U \]
@@ -78,7 +80,7 @@ Integrating both sides gives
 \[ \ln(p) = -\frac{5}{3}\ln(V) + C_1 \]
 or
 \[ \ln(p) = \ln\left(\frac{1}{V^{5/3}}\right)+C_1 \]
-and by taking the exponent of both sides we find
+and exponentiation of both sides we find
 \[ p = \frac{C}{V^{5/3}} \]
 \[ pV^{5/3} = const. \]
 
